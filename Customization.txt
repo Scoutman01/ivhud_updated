@@ -5,7 +5,7 @@ In this folder there are a few options. To enable an option open the folder of y
 
 IMPORTANT: All the .res files will be in hud/resource/ui unless stated otherwise.
 
-- Mini health and ammo displays appear in the middle of the screen when critical on ammo or health. There's an option to remove them compleately.
+- Mini health and ammo displays appear in the middle of the screen when critical on ammo or health. There's an option to remove them compleately (this will revert back to the default hud low ammo animation and re-enable the ammo in reserve shadow).
 
 - To get rid of the heart health copy over the files from the health cross folder.
 
