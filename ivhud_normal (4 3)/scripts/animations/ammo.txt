@@ -1,0 +1,34 @@
+//====================================================================================================================
+
+event HudLowAmmoPulse
+{
+//	Animate	HudWeaponLowAmmoImage		Alpha		"255"		Linear 0.0 0.075
+//	Animate	HudWeaponLowAmmoImage		Alpha		"0"			Linear 0.125 0.075
+
+	RunEvent MiniAmmoDisplayShow 0.0
+	RunEvent HudMiniAmmoPulse 0.0
+}
+event HudMiniAmmoPulse
+{
+	Animate	HudWeaponAmmoSmallFG		Alpha 	"100" 	Linear 		0.0 0.075
+	Animate	HudWeaponAmmoSmallFG		Alpha 	"10" 	Linear 		0.125 0.075
+
+	RunEvent HudLowAmmoPulseLoop	0.25
+}
+
+event HudLowAmmoPulseLoop
+{
+	RunEvent HudMiniAmmoPulse 0.0	
+}
+
+event HudLowAmmoPulseStop
+{
+	StopEvent HudLowAmmoPulse 0.0
+	StopEvent HudLowAmmoPulseLoop 0.0
+	
+	StopEvent HudMiniAmmoPulse 0.0
+	StopEvent HudLowAmmoPulseLoop 0.0
+	RunEvent MiniAmmoDisplayHide 0.0
+}
+
+//====================================================================================================================

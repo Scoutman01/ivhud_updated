@@ -1,0 +1,125 @@
+//====================================================================================================================
+
+event HudHealthBonusPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.2 0.4
+
+	Animate PlayerStatusHealthValueSpecT            FgColor     "0 255 0 255"   Linear 0.0 0.0
+
+	RunEvent HudHealthBonusPulseLoop	0.4
+}
+
+// call to loop HudHealthBonusPulse
+event HudHealthBonusPulseLoop
+{
+	RunEvent HudHealthBonusPulse 0.0
+}
+
+event HudHealthBonusPulseStop
+{
+	StopEvent HudHealthBonusPulse 0.0
+	StopEvent HudHealthBonusPulseLoop 0.0
+
+	Animate PlayerStatusHealthValueSpecT        FgColor     "TanLight"       Accel 0.0 0.0
+}
+
+//====================================================================================================================
+
+event HudHealthDyingPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"100"		Linear 0.0 0.075
+//	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.125 0.0
+
+	Animate PlayerStatusHealthValueSpecT            FgColor     "255 215 0 255"   Linear 0.0 0.0
+
+//	RunEvent HudHealthDyingPulseLoop	0.25
+	RunEvent MiniHealthDisplayShow 0.0
+	RunEvent MiniHealthDisplayBGPulse 0.0	
+}
+
+// call to loop HudHealthDyingPulse
+event HudHealthDyingPulseLoop
+{
+//	RunEvent HudHealthDyingPulse 0.0
+	RunEvent MiniHealthDisplayBGPulse 0.0
+}
+
+event HudHealthDyingPulseStop
+{
+//	StopEvent HudHealthDyingPulse 0.0
+//	StopEvent HudHealthDyingPulseLoop 0.0
+	StopEvent MiniHealthDisplayBGPulse 0.0
+	RunEvent MiniHealthDisplayHide 0.0
+	
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.125 0.0
+
+	Animate PlayerStatusHealthValueSpecT        FgColor     "TanLight"       Accel 0.0 0.0
+}
+
+event MiniHealthDisplayShow
+{
+	Animate	PlayerStatusHealthImageShadow		Size	"22 22"	Linear 0.0 0.0	//mini display health Background
+	Animate	PlayerStatusHealthImageBGShadow		Size	"18 18"	Linear 0.0 0.0	//mini display health Foreground
+	Animate PlayerStatusHealthValueShadow		Size	"50 18"	Linear 0.0 0.0	//mini display health Value
+
+	Animate	PlayerStatusHealthImageShadow 		Alpha		"50"		Linear 0.125 0.075
+	Animate PlayerStatusHealthValueShadow   	Alpha		"200"		Linear 0.125 0.075
+	Animate	PlayerStatusHealthImageBGShadow 	Alpha		"100"		Linear 0.125 0.075
+}
+event MiniAmmoDisplayShow
+{
+	Animate	HudWeaponAmmoSmallFG		Size 	"13 13" 	Linear 		0.0 0.0
+	Animate	HudWeaponAmmoSmallBG		Size 	"15 15" 	Linear 		0.0 0.0
+	Animate	AmmoInReserveShadow				Size 	"55 40" 	Linear 		0.0 0.0
+	
+	Animate	HudWeaponAmmoSmallFG		Alpha 	"75" 	Linear 		0.0 0.0
+	Animate	HudWeaponAmmoSmallBG		Alpha 	"20" 	Linear 		0.0 0.0
+	Animate	AmmoInReserveShadow				Alpha 	"255" 	Linear 		0.0 0.0	
+}
+event MiniAmmoDisplayHide
+{
+	Animate	HudWeaponAmmoSmallFG		Alpha 	"0" 	Linear 		0.0 0.0
+	Animate	HudWeaponAmmoSmallBG		Alpha 	"0" 	Linear 		0.0 0.0
+	Animate	AmmoInReserveShadow				Alpha 	"0" 	Linear 		0.0 0.0	
+}
+
+event MiniAmmoDisplayPulse
+{
+	Animate	HudWeaponAmmoSmallFG		Alpha 	"75" 	Linear 		0.0 0.075
+	Animate	HudWeaponAmmoSmallFG		Alpha 	"10" 	Linear 		0.125 0.0
+	
+	RunEvent MiniAmmoDisplayPulseLoop 0.0
+}
+
+event MiniAmmoDisplayPulseLoop
+{
+	RunEvent MiniAmmoDisplayPulse 0.0	
+}
+
+event MiniHealthDisplayHide
+{
+	Animate	PlayerStatusHealthImageBGShadow 	Alpha		"0"			Linear 0.125 0.0
+	Animate PlayerStatusHealthValueShadow 		Alpha		"0"			Linear 0.125 0.0
+	Animate PlayerStatusHealthImageShadow 		Alpha		"0"			Linear 0.125 0.0		
+}
+
+event MiniHealthDisplayBGPulse
+{
+	Animate	PlayerStatusHealthImageBGShadow 	Alpha		"75"			Linear 0.0 0.075
+	Animate	PlayerStatusHealthImageBGShadow 	Alpha		"10"			Linear 0.125 0.0
+
+	RunEvent MiniHealthDisplayBGPulseLoop 0.25
+}
+
+event MiniHealthDisplayBGPulseLoop
+{
+	RunEvent MiniHealthDisplayBGPulse 0.0
+}
+
+event MiniAmmoFGPulseLoop
+{
+	RunEvent MiniAmmoFGPulse 0.0
+}
+
+//====================================================================================================================
