@@ -1,0 +1,7 @@
+IVHud Loadout controls
+By errur
+======================================
+- Use Left click to rotate character. Unlike before you can feely rotate around the character
+- Use Right click to zoom in and out
+- Hold Shift and drag with Left click to move around
+- Hold Control and drag with Left click to move light around

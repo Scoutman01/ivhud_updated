@@ -1,0 +1,29 @@
+Improved Vanilla hud - Customization instructions
+By errur
+=======================================================
+In this folder there are a few options. To enable an option open the folder of your choice and copy all the inside files (except screenshots) into the IVhud_ folder. Overwrite everything. 
+
+IMPORTANT: All the .res files will be in hud/resource/ui unless stated otherwise.
+
+- Mini health and ammo displays appear in the middle of the screen when critical on ammo or health. There's an option to remove them compleately.
+
+- To get rid of the heart health copy over the files from the health cross folder.
+
+- To change the damage text font copy over the files from the alternative damage numbers folder or open up resource/ui/huddamageaccount.res with a text editor.
+  Find the first entry ("CDamageAccountPanel") and edit "delta_item_font" for normal damage text and "delta_item_font_big" for critical damage text.
+  Some valid fonts are: HudFontSmall, HudFontMedium, HudFontMediumSmall, HudFontMediumBig. Add Bold after the font name to make it use the TF2 Build bold font (ex: HudFontSmallBold).
+  If you wanna change the last damage done (the numbers near the health) color, go to DamageAccountValue (still in huddamageaccount.res) and edit the value of fgcolor.
+
+- To revert to default damage text and remove it from above your health remove huddamageaccount.res.
+
+- To swap the hat and weapon panels on the loadout screen go to classloadoutpanel.res and find "item_xpos_offcenter_a" and "item_xpos_offcenter_b", swap the values. Restart the game for it to take effect.
+
+- To revert to the default loadout screen remove classloadoutpanel.res
+
+- To revert to old loadout screen rotation only mode open resource/ui/classloadoutpanel.res and change "allow_manip" to "allow_rot"
+
+About transparent viewmodel and crosshair :
+
+Transparent viewmodel can be enabled in hud/scripts/hudlayout_transparent_viewmodel.res, just change the value of visible and enabled to 1, restart the game if needed.
+
+Many crosshair are included in the hud, to activate them navigate to hud/resource/crosshairs then open crosshair.res and follow the instructions inside. Crosshair animation is also available in hud/resource/crosshairs/crosshair_animation.txt
