@@ -1503,4 +1503,17 @@
 		"wide"	 		"f0"
 		"tall"	 		"f0"
 	}
+	"CurrencyStatusPanel"
+	{
+		"ControlName"		"CCurrencyStatusPanel"
+		"fieldName"			"CurrencyStatusPanel"
+		"xpos"				"0"
+		"ypos"				"r100"
+		"wide"				"100"
+		"tall"				"100"
+		"xpos_minmode"		"216"
+		"ypos_minmode"		"r138"
+		"visible" 			"1"
+		"enabled" 			"1"
+	}
 }

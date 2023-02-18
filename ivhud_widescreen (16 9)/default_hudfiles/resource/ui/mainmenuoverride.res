@@ -1707,87 +1707,77 @@
 				{
 					"0"
 					{
-						"item"		"Winter 2021 Cosmetic Key"
+						"item"		"Winter 2022 Cosmetic Key"
 						"show_market"	"0"
 					}
 					"1"
 					{
-						"item"		"Winter 2021 Cosmetic Case"
+						"item"		"Winter 2022 Cosmetic Case"
 						"show_market"	"1"
-					}
-					"2"
-					{
-						"item"		"Taunt: Doctor's Defibrillators"
-						"show_market"	"0"
-					}
-					"3"
-					{
-						"item"		"Taunt: Shooter's Stakeout"
-						"show_market"	"0"
 					}
 					"4"
 					{
-						"item"		"Taunt: The Hot Wheeler"
+						"item"		"Taunt: Russian Rubdown"
 						"show_market"	"0"
 					}
 					"5"
 					{
-						"item"		"Map Token Polar"
+						"item"		"Taunt: Tailored Terminal"
 						"show_market"	"0"
 					}
 					"6"
 					{
-						"item"		"Map Token Bread Space"
+						"item"		"Taunt: Roasty Toasty"
 						"show_market"	"0"
 					}
 					"7"
 					{
-						"item"		"Map Token Chilly"
+						"item"		"Map Token Frostwatch"
 						"show_market"	"0"
 					}
 					"8"
 					{
-						"item"		"Map Token Cascade"
+						"item"		"Map Token Frostcliff"
 						"show_market"	"0"
 					}
 					"9"
 					{
-						"item"		"Map Token Altitude"
+						"item"		"Map Token Rumford"
 						"show_market"	"0"
 					}
 					"10"
 					{
-						"item"		"Map Token Doublefrost"
+						"item"		"Map Token Frosty"
 						"show_market"	"0"
 					}
 					"11"
 					{
-						"item"		"Strange Filter: Polar (Community)"
+						"item"		"Map Token Coal Pit"
 						"show_market"	"0"
 					}
 					"12"
 					{
-						"item"		"Strange Filter: Bread Space (Community)"
+						"item"		"Strange Filter: Frostwatch (Community)"
 						"show_market"	"0"
 					}
 					"13"
 					{
-						"item"		"Strange Filter: Chilly (Community)"
+						"item"		"Strange Filter: Frostcliff (Community)"
 						"show_market"	"0"
 					}
 					"14"
 					{
-						"item"		"Strange Filter: Cascade (Community)"
+						"item"		"Strange Filter: Rumford (Community)"
 						"show_market"	"0"
 					}
 					"15"
 					{
-						"item"		"Strange Filter: Altitude (Community)"
+						"item"		"Strange Filter: Frosty (Community)"
 						"show_market"	"0"
 					}
 					"16"
 					{
-						"item"		"Strange Filter: Doublefrost (Community)"
+						"item"		"Strange Filter: Coal Pit (Community)"
 						"show_market"	"0"
 					}
 				}
